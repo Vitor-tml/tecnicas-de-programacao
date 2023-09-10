@@ -36,7 +36,7 @@ PESSOA calcula(PESSOA *nascimento)
 		idade.mes = 0;
 		idade.ano -= 1;
 	}
-	return idade;
+	nascimento->idade = idade.ano;
 }
 
 void exibe(PESSOA idade)
@@ -51,4 +51,5 @@ PESSOA data(int dia, int mes, int ano)
 	aux.dia = dia;
 	aux.mes = mes;
 	aux.ano = ano;
+	return aux;
 }

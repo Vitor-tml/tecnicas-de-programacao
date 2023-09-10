@@ -2,6 +2,7 @@ typedef struct{
 	int dia;
 	int mes;
 	int ano;
+	int idade;
 }PESSOA;
 
 PESSOA ler();
