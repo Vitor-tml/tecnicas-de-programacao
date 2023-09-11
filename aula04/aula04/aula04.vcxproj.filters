@@ -18,5 +18,13 @@
     <ClCompile Include="aula04.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="pessoa.cpp">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pessoa.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

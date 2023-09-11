@@ -128,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="aula04.cpp" />
+    <ClCompile Include="pessoa.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pessoa.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,37 +1,18 @@
 // aula04.cpp : Este arquivo contém a função 'main'. A execução do programa começa e termina ali.
 //
 #include <stdio.h>
+#include "pessoa.h"
 
-struct Pessoa {
-public:
-    int dia;
-    int mes;
-    int ano;
-    int idade;
-
-    Pessoa(int d, int m, int a)
-    {
-        dia = d;
-        mes = m;
-        ano = a;
-        idade = -1;
-    }
-
-    void calculaIdade(int diaAtual, int mesAtual, int anoAtual)
-    {
-
-    }
-};
 int main()
 {
     Pessoa einstein(14, 4, 1879);
     Pessoa vitor(31, 8, 2004);
 
-    einstein.calculaIdade(30, 8, 2023);
-    vitor.calculaIdade(30, 8, 2023);
+    einstein.calculaIdade(10, 9, 2023);
+    vitor.calculaIdade(10, 9, 2023);
 
-    printf("Einstein %d anos\n", einstein.idade);
-    printf("Vitor %d anos\n", vitor.idade);
+    einstein.informaIdade();
+    vitor.informaIdade();
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
