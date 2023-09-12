@@ -1,12 +1,13 @@
 // aula04.cpp : Este arquivo contém a função 'main'. A execução do programa começa e termina ali.
 //
 #include <stdio.h>
+#include <string.h>
 #include "pessoa.h"
 
 int main()
 {
-    Pessoa einstein(14, 4, 1879);
-    Pessoa vitor(31, 8, 2004);
+    Pessoa einstein(14, 4, 1879, "Carlos");
+    Pessoa vitor(31, 8, 2004, "Alberto");
 
     einstein.calculaIdade(10, 9, 2023);
     vitor.calculaIdade(10, 9, 2023);
