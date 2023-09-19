@@ -60,3 +60,13 @@ void Pessoa::informaUniversidade()
 {
 	cout << nome << " estuda na " << universidadeFiliado->getNome() << endl;
 }
+
+void Pessoa::setDepartamento(Departamento* pDepartamento)
+{
+	pDepatamentoFiliado = pDepartamento;
+}
+
+void Pessoa::getDepartamento()
+{
+	cout << nome << " faz parte do " << pDepatamentoFiliado->getSigla() << endl;
+}

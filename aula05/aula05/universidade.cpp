@@ -1,7 +1,9 @@
 #include "universidade.h"
 #include <string>
 
-Universidade::Universidade(const char* nomeInicializa)
+Universidade::Universidade(const char* nomeInicializa):
+informatica("DAINF", "Departamento de Informatica."),
+matematica("DAMAT", "Departamento de Matematica.")
 {
 	inicializa(nomeInicializa);
 }

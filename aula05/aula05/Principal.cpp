@@ -8,9 +8,11 @@ cambridge("Cambridge"),
 princeton("Princeton"),
 utfpr("UTFPR")
 {
+	utfpr.informatica.inicializa("DAINF", "Departamento de Informatica.");
 	newton.setUniversidade(&cambridge);
 	einstein.setUniversidade(&princeton);
 	vitor.setUniversidade(&utfpr);
+	vitor.setDepartamento(&utfpr.informatica);
 }
 
 Principal::~Principal()
@@ -23,4 +25,5 @@ void Principal::executar()
 	newton.informaUniversidade();
 	einstein.informaUniversidade();
 	vitor.informaUniversidade();
+	vitor.getDepartamento();
 }

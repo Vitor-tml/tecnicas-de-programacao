@@ -11,7 +11,7 @@ private:
 	int mesNascimento;
 	int anoNascimento;
 	Universidade *universidadeFiliado;
-
+	Departamento *pDepatamentoFiliado;
 	void inicializa(const char* nomeContrutora, int diaConstrutora, int mesConstrutora, int anoConstrutora);
 	void calculaIdade();
 public:
@@ -21,6 +21,8 @@ public:
 	void mostraIdade();
 	void setUniversidade(Universidade* pUniversidade);
 	void informaUniversidade();
+	void setDepartamento(Departamento *pDepartamento);
+	void getDepartamento();
 };
 
 #endif
