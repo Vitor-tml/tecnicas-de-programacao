@@ -20,9 +20,26 @@ void Universidade::inicializa(const char* isigla, const char* inome)
 {
 	strcpy_s(sigla, sizeof(sigla), isigla);
 	strcpy_s(nome, sizeof(nome), inome);
+	pDepartamento = nullptr;
 }
 
 char* Universidade::getSigla()
 {
 	return sigla;
+}
+
+char* Universidade::getNome()
+{
+	return nome;
+}
+
+void Universidade::setDepartamento(Departamento* novoDepartamento)
+{
+	// Define o departamento
+	pDepartamento = novoDepartamento;
+}
+
+char* Universidade::getDepartamento()
+{
+	return pDepartamento->getSigla();
 }

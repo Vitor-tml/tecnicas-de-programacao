@@ -20,7 +20,7 @@ void Departamento::inicializa(const char* iSigla, const char* iNome)
 {
 	strcpy_s(sigla, sizeof(sigla), iSigla);
 	strcpy_s(nome, sizeof(nome), iNome);
-
+	id = -1;
 }
 char* Departamento::getSigla()
 {

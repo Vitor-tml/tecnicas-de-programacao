@@ -2,8 +2,8 @@
 class Departamento
 {
 private:
-	char sigla[5];
-	char nome[30];
+	char sigla[6];
+	char nome[50];
 	int id;
 public:
 	Departamento();

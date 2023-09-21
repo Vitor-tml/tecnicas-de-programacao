@@ -1,6 +1,8 @@
 #include "Pessoa.h"
 #include <ctime>
 #include <string.h>
+#include <iostream>
+using namespace std;
 
 Pessoa::Pessoa()
 {
@@ -17,14 +19,16 @@ Pessoa::~Pessoa()
 
 }
 
-void Pessoa::inicializa(const char* iinicializaNome, int dia, int mes, int ano)
+void Pessoa::inicializa(const char* inicializaNome, int dia, int mes, int ano)
 {
     diaNascimento = dia;
     mesNascimento = mes;
     anoNascimento = ano;
-    strcpy_s(nome, sizeof(nome), iinicializaNome);
+    strcpy_s(nome, sizeof(nome), inicializaNome);
     idade = calculaIdade();
     id = -1;
+    pUniversidade = nullptr;
+    pDepartamento = nullptr;
 }
 
 int Pessoa::calculaIdade()
@@ -49,4 +53,29 @@ int Pessoa::calculaIdade()
         idade--;
 
     return idade;
+}
+
+void Pessoa::setUniversidade(Universidade* pUni)
+{
+    pUniversidade = pUni;
+}
+
+char* Pessoa::getUniversidade()
+{
+    return pUniversidade->getNome();
+}
+
+void Pessoa::setDepartamento(Departamento * pDepto)
+{
+    pDepartamento = pDepto;
+}
+
+char* Pessoa::getDepartamento()
+{
+    return pDepartamento->getSigla();
+}
+
+void Pessoa::informaUniversidade()
+{
+    cout << nome << " faz parte do " << getDepartamento() << " da " << getUniversidade() << endl;
 }
