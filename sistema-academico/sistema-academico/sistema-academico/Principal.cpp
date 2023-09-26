@@ -24,31 +24,29 @@ Principal::Principal()
     }
     // INICIALIZANDO OBJETOS
     // Pessoas
-	vitor.inicializa("Vitor", 31, 8, 2004);
-	newton.inicializa("Isaac Newton", 25, 12, 1642);
-	einstein.inicializa("Albert Einstein", 14, 3, 1879);
+    vitor.inicializa("Vitor Gabriel", 31, 8, 2004);
+    simao.inicializa("Jean Simão", 1, 1, 1900);
     // Universidades
     utfpr.inicializa("UTFPR", "Universidade Tecnológica Federal do Paraná");
     cambridge.inicializa("Cambridge", "University of Cambridge");
     zurique.inicializa("UZH", "Universität Zürich");
     //Departamentos
     dainf.inicializa("DAINF", "Departamento de Informática - UTFPR");
+    damat.inicializa("DAMAT", "Departamento de Matermática - UTFPR");
     piuz.inicializa("PIUZ", "Department of Physics - University of Cambridge");
     cavendish.inicializa("CVDL", "Departamento de Física - Universität Zürich");
 
     // INICIALIZANDO RELAÇõES
     // Universidades com pessoas
+    simao.setUniversidade(&utfpr);
     vitor.setUniversidade(&utfpr);
-    newton.setUniversidade(&cambridge);
-    einstein.setUniversidade(&zurique);
     // Departamentos com pessoas
-    vitor.setDepartamento(&dainf);
-    newton.setDepartamento(&piuz);
-    einstein.setDepartamento(&cavendish);
+    simao.setDepartamento(&dainf);
     // Universidade com departamento
-    utfpr.setDepartamento(&dainf);
-    cambridge.setDepartamento(&piuz);
-    zurique.setDepartamento(&cavendish);
+    utfpr.setDepartamento(&dainf, 0);
+    utfpr.setDepartamento(&damat, 1);
+    cambridge.setDepartamento(&piuz, 0);
+    zurique.setDepartamento(&cavendish, 0);
 }
 
 Principal::~Principal()
@@ -58,8 +56,6 @@ Principal::~Principal()
 
 void Principal::executar()
 {
-    vitor.informaUniversidade();
-    newton.informaUniversidade();
-    einstein.informaUniversidade();
-    cout << utfpr.getSigla() << " tem o " << utfpr.getDepartamento() << endl;
+    utfpr.listaDepartamentos();
+    simao.informaTrabalho();
 }

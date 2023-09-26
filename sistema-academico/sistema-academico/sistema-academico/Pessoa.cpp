@@ -27,8 +27,6 @@ void Pessoa::inicializa(const char* inicializaNome, int dia, int mes, int ano)
     strcpy_s(nome, sizeof(nome), inicializaNome);
     idade = calculaIdade();
     id = -1;
-    pUniversidade = nullptr;
-    pDepartamento = nullptr;
 }
 
 int Pessoa::calculaIdade()
@@ -53,29 +51,4 @@ int Pessoa::calculaIdade()
         idade--;
 
     return idade;
-}
-
-void Pessoa::setUniversidade(Universidade* pUni)
-{
-    pUniversidade = pUni;
-}
-
-char* Pessoa::getUniversidade()
-{
-    return pUniversidade->getNome();
-}
-
-void Pessoa::setDepartamento(Departamento * pDepto)
-{
-    pDepartamento = pDepto;
-}
-
-char* Pessoa::getDepartamento()
-{
-    return pDepartamento->getSigla();
-}
-
-void Pessoa::informaUniversidade()
-{
-    cout << nome << " faz parte do " << getDepartamento() << " da " << getUniversidade() << endl;
 }

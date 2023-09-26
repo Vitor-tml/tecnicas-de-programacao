@@ -2,6 +2,8 @@
 #include "Pessoa.h"
 #include "Universidade.h"
 #include "Departamento.h"
+#include "Aluno.h"
+#include "Professor.h"
 
 class Principal
 {
@@ -11,9 +13,8 @@ private:
 	int mesAtual;
 	int anoAtual;
 	// Obj: pessoas
-	Pessoa vitor;
-	Pessoa einstein;
-	Pessoa newton;
+	Professor simao;
+	Aluno vitor;
 	// Obj universidades
 	Universidade utfpr;
 	Universidade cambridge;
@@ -22,6 +23,7 @@ private:
 	Departamento dainf;
 	Departamento cavendish;
 	Departamento piuz;
+	Departamento damat;
 
 public:
 	Principal();
