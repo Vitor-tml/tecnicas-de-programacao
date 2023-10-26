@@ -43,10 +43,10 @@ Principal::Principal()
     // Departamentos com pessoas
     simao.setDepartamento(&dainf);
     // Universidade com departamento
-    utfpr.setDepartamento(&dainf, 0);
-    utfpr.setDepartamento(&damat, 1);
-    cambridge.setDepartamento(&piuz, 0);
-    zurique.setDepartamento(&cavendish, 0);
+    utfpr.setDepartamento(&dainf);
+    utfpr.setDepartamento(&damat);
+    cambridge.setDepartamento(&piuz);
+    zurique.setDepartamento(&cavendish);
 }
 
 Principal::~Principal()
