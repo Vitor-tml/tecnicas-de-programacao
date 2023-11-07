@@ -1,0 +1,3 @@
+C:/Users/vitor/Programas/tecnicas-de-programacao/testes-jogo/cmake-testes/build/CMakeFiles/main.dir
+C:/Users/vitor/Programas/tecnicas-de-programacao/testes-jogo/cmake-testes/build/CMakeFiles/edit_cache.dir
+C:/Users/vitor/Programas/tecnicas-de-programacao/testes-jogo/cmake-testes/build/CMakeFiles/rebuild_cache.dir
